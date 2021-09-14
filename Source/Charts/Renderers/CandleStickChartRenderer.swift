@@ -160,6 +160,10 @@ open class CandleStickChartRenderer: LineScatterCandleRadarRenderer
                 
                 // draw body differently for increasing and decreasing entry
 
+                _bodyRect.origin.x -= 3.0
+                _bodyRect.size.width = 6.0
+
+
                 if open > close
                 {
                     accessibilityMovementDescription = "decreasing"
